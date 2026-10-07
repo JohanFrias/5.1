@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Profe - Productos</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+      <div class="banner">
+        <h1 id="titulo">Papeleria Y Merceria La Profe</h1>
+        <nav class="menu" aria-label="Menú principal">
+          <a href="index.html" data-nav="inicio">Inicio</a>
+          <a href="productos.html" data-nav="productos" aria-current="page">Productos</a>
+          <a href="pedido.html" data-nav="pedido">Contacto y Pedido</a>
+        </nav>
+      </div>
+
+      <h2>Productos y Servicios</h2>
+
+      <div class="filtros" role="group" aria-label="Filtrar por categoría">
+        <button type="button" class="filtro activo" data-categoria="">Todos</button>
+        <button type="button" class="filtro" data-categoria="papeleria">Papelería</button>
+        <button type="button" class="filtro" data-categoria="merceria">Mercería</button>
+        <button type="button" class="filtro" data-categoria="manualidades">Manualidades</button>
+        <button type="button" class="filtro" data-categoria="servicios">Servicios</button>
+      </div>
+
+      <p id="estado-productos" class="estado" role="status">Cargando productos...</p>
+      <div class="productos" id="lista-productos"></div>
+
+      <footer class="pie"><p>© 2026 Papelería y Mercería La Profe · Todo lo que necesitas, en un solo lugar.</p></footer>
+      <script src="productos.js"></script>
+    </body>
+</html>

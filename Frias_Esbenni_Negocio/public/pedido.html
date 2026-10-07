@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Profe - Contacto y Pedido</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+      <div class="banner">
+        <h1 id="titulo">Papeleria Y Merceria La Profe</h1>
+        <nav class="menu" aria-label="Menú principal">
+          <a href="index.html" data-nav="inicio">Inicio</a>
+          <a href="productos.html" data-nav="productos">Productos</a>
+          <a href="pedido.html" data-nav="pedido" aria-current="page">Contacto y Pedido</a>
+        </nav>
+      </div>
+
+      <h2>Contáctenos y realice su pedido</h2>
+
+      <div class="contenedor-servicios">
+        <div class="servicio">
+          <h2>Información de Contacto</h2>
+          <p>Contáctenos vía WhatsApp</p>
+          <a id="enlace-whatsapp" href="https://wa.me/8095081967" target="_blank" rel="noopener">809-508-1967</a>
+        </div>
+
+        <div class="servicio">
+          <h2>Realizar Pedido</h2>
+          <form id="form-pedido" novalidate>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="detalles">Detalles del pedido:</label>
+            <input type="text" id="detalles" name="detalles" required><br>
+
+            <button type="submit" id="btn-enviar">Enviar pedido</button>
+          </form>
+          <p id="mensaje-pedido" class="mensaje" role="alert" hidden></p>
+        </div>
+      </div>
+
+      <footer class="pie"><p>© 2026 Papelería y Mercería La Profe · Todo lo que necesitas, en un solo lugar.</p></footer>
+      <script src="pedido.js"></script>
+    </body>
+</html>
